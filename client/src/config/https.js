@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const https = axios.create({
-    baseURL: 'http://localhost:2509/api',
+    baseURL: import.meta.env.VITE_API_URL,
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
