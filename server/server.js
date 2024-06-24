@@ -15,6 +15,8 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+
 app.use('/api/auth', require('./routes/auth.route'));
 app.use('/api/users', require('./routes/user.route'));
 app.use('/api/order', require('./routes/order.route'));
@@ -42,4 +44,4 @@ app.listen(port, function () {
 }
 );
 
-
+module.exports = app;
